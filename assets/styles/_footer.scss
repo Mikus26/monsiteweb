@@ -1,0 +1,38 @@
+// Déclaration des variables si nécessaire
+$footer-bg-color: #343a40; // Couleur de fond du footer
+$footer-text-color: #ffffff; // Couleur du texte du footer
+
+// Styles pour le footer
+footer {
+  background-color: red;
+  color: $footer-text-color;
+  padding: 20px 0; // Espace intérieur du footer
+  width: 100%; // Prend toute la largeur disponible
+
+  // Utilisation de Flexbox pour aligner le contenu
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; // Alignement en bas de la page
+
+  // Ajustement pour le contenu au centre (facultatif)
+  align-items: center;
+
+  // Ajout de marges pour l'espace entre le contenu et les bords
+  margin-top: auto; // Force le footer en bas de la page
+}
+
+// Styles pour les listes non ordonnées à l'intérieur des colonnes
+ul.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+// Styles pour les liens
+a {
+  color: $footer-text-color;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
