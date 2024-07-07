@@ -1,4 +1,5 @@
 const Encore = require('@symfony/webpack-encore');
+const context = require('@symfony/webpack-encore/lib/context');
 
 // Manually configure the runtime environment if not already configured yet by the "encore" command.
 // It's useful when you use tools that rely on webpack.config.js file.
@@ -11,6 +12,9 @@ Encore
     .setOutputPath('public/build/')
     // public path used by the web server to access the output path
     .setPublicPath('/build')
+
+
+
     // only needed for CDN's or subdirectory deploy
     //.setManifestKeyPrefix('build/')
 
@@ -21,6 +25,7 @@ Encore
      * and one CSS file (e.g. app.css) if your JavaScript imports CSS.
      */
     .addEntry('app', './assets/app.js')
+    .addEntry('base', './assets/base.js')
 
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
