@@ -1,15 +1,20 @@
 *
 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color:white;
     
 }
+$theme-colors: (
+  "primary": #00d92f,
+  "danger": #ff4136
+);
 
 body{
-    background-color:rgb(232, 232, 232);
+    background-color:rgb(1, 1, 29);
 }
 
 .nom{
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     font-size: 90px;
 }
 
@@ -19,3 +24,12 @@ body{
     border-radius: 100%;
 }
 
+::selection
+{
+    background-color: black;
+    color: white;
+}
+
+.fond {
+    background-color:rgb(10, 0, 34);
+}
