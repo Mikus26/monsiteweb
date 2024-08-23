@@ -1,28 +1,25 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Michael Walenciak{% endblock %}
+{% block title %}Michael Walenciak
+{% endblock %}
 
 {% block body %}
-	<div class="row mb-5 ">
+	<div class="row mb-3 ">
 		<div class="col-md-1"></div>
-		<div class="col-md-7 mt-5">
+		<div class="col-md-5">
 			<p class="nom fw-bold mt-4">Michael Walenciak</p>
 			<div class=" ms-5">
 				<h3 class="fw-bold mt-5 mb-5">Dévellopeur web Fullstack</h3>
 
 				<h4 class="mt-3 ms-5">Votre futur develloppeur web</h4>
+				<div class="d-flex justify-content-center mt-5">
+					<a class="btn btn-primary" href="">{{ "envieProjet" | trans({}, 'index') }}</a>
+				</div>
 			</div>
 		</div>
-		<div class="col-md-2 mt-5">
-			<img class="ms-5 mt-5" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="moi-meme">
+		<div class="col-md-6">
+			<img class="img-fluid" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="moi-meme">
 		</div>
-	</div>
-	<div class="row">
 		<div class="col-md-1"></div>
-
-		<div class="col-md-7 d-flex justify-content-center">
-
-			<div class="btn btn-danger col-md-3 p-4 rounded fw-bold mt-5 mb-5">Un projet en tete ?</div>
-		</div>
 	</div>
 {% endblock %}
