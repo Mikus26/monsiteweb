@@ -7,19 +7,73 @@
 	<div class="row mb-3 ">
 		<div class="col-md-1"></div>
 		<div class="col-md-5">
-			<p class="nom fw-bold mt-4">Michael Walenciak</p>
-			<div class=" ms-5">
-				<h3 class="fw-bold mt-5 mb-5">Dévellopeur web Fullstack</h3>
-
-				<h4 class="mt-3 ms-5">Votre futur develloppeur web</h4>
+			<p class="nom fw-bold mt-4">{{ "mw" | trans({}, 'index') }}</p>
+			<div class=" ms-5 mb-5">
+				<div class="mb-5">
+					<h3 class="fw-bold mt-5 mb-5">{{ "webDev" | trans({}, 'index') }}</h3>
+				</div>
 				<div class="d-flex justify-content-center mt-5">
-					<a class="btn btn-primary" href="">{{ "envieProjet" | trans({}, 'index') }}</a>
+					<a class="btn btn-primary my-5 text-white fw-bold" href="">{{ "envieProjet" | trans({}, 'index') }}</a>
 				</div>
 			</div>
 		</div>
 		<div class="col-md-6">
-			<img class="img-fluid" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="moi-meme">
+			<img class="img-fluid" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="img-work">
 		</div>
 		<div class="col-md-1"></div>
 	</div>
-{% endblock %}
+	<div class="d-flex justify-content-center mt-4 mb-5">
+		<h3 class="fw-bold">Qui suis-je ?</h3>
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="p-5 col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare justo eu posuere dapibus. Fusce vel hendrerit arcu, vitae congue tellus. Donec tincidunt lorem eget arcu volutpat, nec condimentum nulla ornare. Nulla luctus risus a nisi dignissim, id efficitur mi iaculis. Sed mi ante, gravida eu risus ac, euismod tempus libero. Nam rhoncus orci ex, sit amet euismod sapien posuere eu. Phasellus sed nibh sit amet massa consectetur elementum. Curabitur nibh lorem, dapibus at nisl et, sagittis venenatis massa. Duis quis est mauris. Etiam tincidunt eros quis urna sodales molestie. In facilisis lorem vel lacus porttitor elementum. Praesent at purus tincidunt, aliquam felis quis, aliquam ante. Ut sed nisl eu est consectetur rutrum.</div>
+	</div>
+		<div class="d-flex justify-content-center mt-4 mb-5">
+		<h3 class="fw-bold">Mes outils ?</h3>
+	</div>
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="p-5 col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare justo eu posuere dapibus. Fusce vel hendrerit arcu, vitae congue tellus. Donec tincidunt lorem eget arcu volutpat, nec condimentum nulla ornare. Nulla luctus risus a nisi dignissim, id efficitur mi iaculis. Sed mi ante, gravida eu risus ac, euismod tempus libero. Nam rhoncus orci ex, sit amet euismod sapien posuere eu. Phasellus sed nibh sit amet massa consectetur elementum. Curabitur nibh lorem, dapibus at nisl et, sagittis venenatis massa. Duis quis est mauris. Etiam tincidunt eros quis urna sodales molestie. In facilisis lorem vel lacus porttitor elementum. Praesent at purus tincidunt, aliquam felis quis, aliquam ante. Ut sed nisl eu est consectetur rutrum.</div>
+	</div>
+	<div class="row mb-5">
+		<div class="col-md-3"></div>
+		<div class="mt-5 p-5 col-md-6">
+
+			<H3 class="fw-bold d-flex justify-content-center mb-5">Ce que je vous propose</H3>
+			<div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare justo eu posuere dapibus. Fusce vel hendrerit arcu, vitae congue tellus. Donec tincidunt lorem eget arcu volutpat, nec condimentum nulla ornare. Nulla luctus risus a nisi dignissim, id efficitur mi iaculis. Sed mi ante, gravida eu risus ac, euismod tempus libero. Nam rhoncus orci ex, sit amet euismod sapien posuere eu. Phasellus sed nibh sit amet massa consectetur elementum. Curabitur nibh lorem, dapibus at nisl et, sagittis venenatis massa. Duis quis est mauris. Etiam tincidunt eros quis urna sodales molestie. In facilisis lorem vel lacus porttitor elementum. Praesent at purus tincidunt, aliquam felis quis, aliquam ante. Ut sed nisl eu est consectetur rutrum.</div>
+
+		</div>
+	</div>
+	<div class="container bootstrap snippets bootdeys mt-5">
+		<div class="row">
+			<div class="col-md-4"></div>
+			<div class="col-md-4 col-sm-6 content-card ">
+				<div class="card-big-shadow">
+					<div class="card card-just-text bg-primary rounded-3 ">
+						<div class="content">
+							<h3 class="p-4 d-flex justify-content-center">Comment ca se passe ?
+							</h3>
+							<h4 class="p-4 d-flex justify-content-center">Le déroulé des choses
+							</h4>
+							<div class="description p-4">
+								<ul>
+									<li class="py-3">Lorem ipsum dolor sit amet,</li>
+									<li class="py-3">Lorem ipsum dolor sit amet,</li>
+									<li class="py-3">Lorem ipsum dolor sit amet,</li>
+									<li class="py-3">Lorem ipsum dolor sit amet,</li>
+									<li class="py-3">Lorem ipsum dolor sit amet,</li>
+									<li class="py-3">Lorem ipsum dolor sit amet,</li>
+								</ul>
+								<div class="d-flex justify-content-center">
+								<a class="btn btn-danger my-5 text-white fw-bold  justify-content-center" href="">{{ "envieProjet" | trans({}, 'index') }}</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- end card -->
+				</div>
+			</div>
+
+
+		{% endblock %}
