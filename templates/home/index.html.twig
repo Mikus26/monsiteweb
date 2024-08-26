@@ -22,20 +22,27 @@
 		</div>
 		<div class="col-md-1"></div>
 	</div>
+	{#presentation de moi meme#}
 	<div class="d-flex justify-content-center mt-4 mb-5">
 		<h3 class="fw-bold">Qui suis-je ?</h3>
 	</div>
-	<div class="row">
-		<div class="col-md-3"></div>
-		<div class="p-5 col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare justo eu posuere dapibus. Fusce vel hendrerit arcu, vitae congue tellus. Donec tincidunt lorem eget arcu volutpat, nec condimentum nulla ornare. Nulla luctus risus a nisi dignissim, id efficitur mi iaculis. Sed mi ante, gravida eu risus ac, euismod tempus libero. Nam rhoncus orci ex, sit amet euismod sapien posuere eu. Phasellus sed nibh sit amet massa consectetur elementum. Curabitur nibh lorem, dapibus at nisl et, sagittis venenatis massa. Duis quis est mauris. Etiam tincidunt eros quis urna sodales molestie. In facilisis lorem vel lacus porttitor elementum. Praesent at purus tincidunt, aliquam felis quis, aliquam ante. Ut sed nisl eu est consectetur rutrum.</div>
+	<div class="row d-flex align-items-center">
+		<div class="col-md-6"><img class="img-fluid" src="{{ asset('/build/images/mobilDevelopment.ccaa9afe.png') }}" alt="img-work"></div>
+		<div class="p-5 col-md-6 d-flex flex-column mt-5 align-items-center"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare justo eu posuere dapibus. Fusce vel hendrerit arcu, vitae congue tellus. Donec tincidunt lorem eget arcu volutpat, nec condimentum nulla ornare. Nulla luctus risus a nisi dignissim, id efficitur mi iaculis. Sed mi ante, gravida eu risus ac, euismod tempus libero. Nam rhoncus orci ex, sit amet euismod sapien posuere eu. Phasellus sed nibh sit amet massa consectetur elementum. Curabitur nibh lorem, dapibus at nisl et, sagittis venenatis massa. Duis quis est mauris. Etiam tincidunt eros quis urna sodales molestie. In facilisis lorem vel lacus porttitor elementum. Praesent at purus tincidunt, aliquam felis quis, aliquam ante. Ut sed nisl eu est consectetur rutrum.</p><div class="col-md-2">
+		</div>
+		<a class="btn btn-primary col-md-5 mt-5 justify-content-center text-white fw-bold" href="">Envie d'en savoir plus ? </a>
+		</div>
+		
 	</div>
-		<div class="d-flex justify-content-center mt-4 mb-5">
+	{# mes outils #}
+	<div class="d-flex justify-content-center mt-4 mb-5">
 		<h3 class="fw-bold">Mes outils ?</h3>
 	</div>
 	<div class="row">
-		<div class="col-md-3"></div>
-		<div class="p-5 col-md-6">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare justo eu posuere dapibus. Fusce vel hendrerit arcu, vitae congue tellus. Donec tincidunt lorem eget arcu volutpat, nec condimentum nulla ornare. Nulla luctus risus a nisi dignissim, id efficitur mi iaculis. Sed mi ante, gravida eu risus ac, euismod tempus libero. Nam rhoncus orci ex, sit amet euismod sapien posuere eu. Phasellus sed nibh sit amet massa consectetur elementum. Curabitur nibh lorem, dapibus at nisl et, sagittis venenatis massa. Duis quis est mauris. Etiam tincidunt eros quis urna sodales molestie. In facilisis lorem vel lacus porttitor elementum. Praesent at purus tincidunt, aliquam felis quis, aliquam ante. Ut sed nisl eu est consectetur rutrum.</div>
+		<div class="p-5 col-md-6 d-flex align-items-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ornare justo eu posuere dapibus. Fusce vel hendrerit arcu, vitae congue tellus. Donec tincidunt lorem eget arcu volutpat, nec condimentum nulla ornare. Nulla luctus risus a nisi dignissim, id efficitur mi iaculis. Sed mi ante, gravida eu risus ac, euismod tempus libero. Nam rhoncus orci ex, sit amet euismod sapien posuere eu. Phasellus sed nibh sit amet massa consectetur elementum. Curabitur nibh lorem, dapibus at nisl et, sagittis venenatis massa. Duis quis est mauris. Etiam tincidunt eros quis urna sodales molestie. In facilisis lorem vel lacus porttitor elementum. Praesent at purus tincidunt, aliquam felis quis, aliquam ante. Ut sed nisl eu est consectetur rutrum.</div>
+			<div class="col-md-6"><img class="img-fluid" src="{{ asset('/build/images/workinprogress.d79b20e7.png') }}" alt="img-work"></div>
 	</div>
+	{# la propal #}
 	<div class="row mb-5">
 		<div class="col-md-3"></div>
 		<div class="mt-5 p-5 col-md-6">
@@ -50,7 +57,7 @@
 			<div class="col-md-4"></div>
 			<div class="col-md-4 col-sm-6 content-card ">
 				<div class="card-big-shadow">
-					<div class="card card-just-text bg-primary rounded-3 ">
+					<div class="card card-just-text bg-primary border border-light border-5 rounded-3 ">
 						<div class="content">
 							<h3 class="p-4 d-flex justify-content-center">Comment ca se passe ?
 							</h3>
@@ -66,7 +73,7 @@
 									<li class="py-3">Lorem ipsum dolor sit amet,</li>
 								</ul>
 								<div class="d-flex justify-content-center">
-								<a class="btn btn-danger my-5 text-white fw-bold  justify-content-center" href="">{{ "envieProjet" | trans({}, 'index') }}</a>
+									<a class="btn btn-dark my-5 text-white fw-bold  justify-content-center" href="">{{ "envieProjet" | trans({}, 'index') }}</a>
 								</div>
 							</div>
 						</div>
