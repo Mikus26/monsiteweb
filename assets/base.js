@@ -6,3 +6,6 @@ import "./img/symf.png";
 import "./img/dev.png";
 import "./img/workinprogress.png";
 import "./img/mobilDevelopment.png";
+import "./img/phpp.png";
+import "./img/sqll.png";
+import "./img/MW_2.png";
