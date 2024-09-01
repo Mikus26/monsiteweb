@@ -2,6 +2,8 @@
 
 namespace App\Controller;
 
+use App\Form\ContactType;
+use App\Entity\Contact;
 use App\Entity\Avis;
 use App\Form\AvisType;
 use Doctrine\ORM\EntityManagerInterface;
@@ -15,20 +17,20 @@ class HomeController extends AbstractController
     #[Route('/', name: 'app_home')]
     public function index(Request $request, EntityManagerInterface $entityManager): Response
     {
-        $avi = new Avis();
-        $form = $this->createForm(AvisType::class, $avi);
+        $contact = new Contact();
+        $form = $this->createForm(ContactType::class, $contact);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $entityManager->persist($avi);
+            $entityManager->persist($contact);
             $entityManager->flush();
 
-            return $this->redirectToRoute('app_home');
+            return $this->redirectToRoute('app_home', [], Response::HTTP_SEE_OTHER);
         }
 
         return $this->render('home/index.html.twig', [
-            'controller_name' => 'HomeController',
-            'form' => $form->createView(),
+            'contact' => $contact,
+            'form' => $form,
         ]);
     }
 }

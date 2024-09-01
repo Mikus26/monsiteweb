@@ -1,0 +1,44 @@
+{{ form_start(form) }}
+
+
+<!-- 2 column grid layout with text inputs for the first and last names -->
+<div class="row">
+	<div class="col-md-3"></div>
+	<div class="col-md-6  border border-light rounded">
+		<div class="row mb-4">
+
+			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
+				{{ form_widget(form.Name)}}
+				{{ form_label(form.Name)}}
+			</div>
+			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
+				{{ form_widget(form.FirstName)}}
+				{{ form_label(form.FirstName)}}
+			</div>
+		</div>
+
+
+		<!-- Text input -->
+		<div class="row mb-4">
+
+			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
+				{{ form_widget(form.Mail)}}
+				{{ form_label(form.Mail)}}
+			</div>
+			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
+				{{ form_widget(form.Phone)}}
+				{{ form_label(form.Phone)}}
+			</div>
+		</div>
+
+		<div data-mdb-input-init class="form-outline mb-4">
+			{{ form_widget(form.Message) }}
+		</div>
+
+		<!-- Checkbox -->
+		<div class="form-check d-flex justify-content-center mb-4">
+
+			<button class="btn btn-light justify-content-center">{{ button_label|default('Save') }}</button>
+		</div>
+	</div>
+</div><!-- Submit button --><form>{{ form_end(form) }}

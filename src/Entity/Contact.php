@@ -6,6 +6,7 @@ use App\Repository\ContactRepository;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: ContactRepository::class)]
+#[ORM\HasLifecycleCallbacks()]
 class Contact
 {
     #[ORM\Id]
@@ -94,6 +95,12 @@ class Contact
         $this->Message = $Message;
 
         return $this;
+    }
+
+    #[ORM\PrePersist]
+    public function setCreatedAtValue(): void
+    {
+        $this->CreatedAt = new \DateTimeImmutable();
     }
 
     public function getCreatedAt(): ?\DateTimeImmutable
