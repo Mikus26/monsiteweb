@@ -19,9 +19,9 @@
 			<div class="carousel-inner">
 				<div class="carousel-item active">
 					<div class="container">
-						<div class="carousel-caption text-start">
+						<div class="carousel-caption text-start d-flex">
 							<h1>Example headline.</h1>
-							<p>Some representative placeholder content for the first slide of the carousel.</p>
+							<img class=" justify-content-center w-50 align-content-center mt-5" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="img-work">
 							<p>
 								<a class="btn btn-lg btn-primary" href="#">Sign up today</a>
 							</p>
@@ -65,10 +65,6 @@
 			</button>
 		</div>
 
-
-		<!-- Marketing messaging and featurettes
-						  ================================================== -->
-		<!-- Wrap the rest of the page in another container to center all the content. -->
 
 		<div
 			class="container marketing">
@@ -119,7 +115,7 @@
 					<p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
 				</div>
 				<div class="col-md-5">
-<img class="img-fluid" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="img-work">
+					<div id="svgContainer"></div>
 
 				</div>
 			</div>
@@ -134,7 +130,7 @@
 					<p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
 				</div>
 				<div class="col-md-5 order-md-1">
-<img class="img-fluid" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="img-work">
+					<div id="photo1"></div>
 
 				</div>
 			</div>
@@ -149,7 +145,7 @@
 					<p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
 				</div>
 				<div class="col-md-5">
-<img class="img-fluid" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="img-work">
+					<img class="img-fluid" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="img-work">
 
 				</div>
 			</div>
@@ -160,9 +156,8 @@
 		<!-- /END THE FEATURETTES -->
 
 		</div>
-		
-		{% include "/contact/_form.html.twig" %}
 
+		{% include "/contact/_form.html.twig" %}
 
 
 	</body>
