@@ -1,8 +1,11 @@
+@font-face {
+    font-family: 'HollaScript';
+    src: url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap') format("ttf");
+  }
+
 *
 {
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color:white;
-    
+    color:white;   
 }
 $theme-colors: (
   "primary": #00d92f,
@@ -15,7 +18,7 @@ body{
 
 .nom{
     color: rgb(255, 255, 255);
-    font-size: 90px;
+    font-size: 60px;
 }
 
 .myself{
@@ -40,4 +43,21 @@ body{
     list-style: none;
 }
 
+
+.logo
+
+{
+    height:20px;
+}
+
+.picofme{
+    height: 400px;
+    justify-content: center;
+    border-radius: 100%;
+
+}
+
+.name{
+    font-size: 150px ;
+}
 

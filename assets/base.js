@@ -9,3 +9,4 @@ import "./img/mobilDevelopment.png";
 import "./img/phpp.png";
 import "./img/sqll.png";
 import "./img/MW_2.png";
+import "./img/responsive_web_design_15.jpg";
