@@ -19,3 +19,32 @@ animations.forEach(({ element, path }) => {
     });
   }
 });
+
+document.getElementById("toggle-light").addEventListener("click", function() {
+  // Sélectionner tous les éléments ayant une classe contenant '-dark' ou '-light'
+  let elements = document.querySelectorAll('[class*="-dark"], [class*="-white"], .text-black, .text-white');
+
+  elements.forEach(function(element) {
+      // Remplacer toutes les occurrences de '-dark' par '-light'
+      if (element.className.includes('-dark')) {
+          element.className = element.className.replace(/-dark/g, '-white');
+      } 
+      // Remplacer toutes les occurrences de '-light' par '-dark'
+      else if (element.className.includes('-white')) {
+          element.className = element.className.replace(/-white/g, '-dark');
+      }
+
+      // Remplacer 'text-black' par 'text-white'
+      if (element.classList.contains('text-black')) {
+          element.classList.remove('text-black');
+          element.classList.add('text-white');
+      } 
+      // Remplacer 'text-white' par 'text-black'
+      else if (element.classList.contains('text-white')) {
+          element.classList.remove('text-white');
+          element.classList.add('text-black');
+      }
+  });
+});
+
+

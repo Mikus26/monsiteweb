@@ -8,3 +8,5 @@ sassOptions.importers.push(
     // No need to pass `loadPaths`, because modern API handle them itself
     getModernWebpackImporter(this, implementation, []),
   );
+
+x

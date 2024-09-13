@@ -1,13 +1,17 @@
-
-
-        <div class="card m-4">
-            <div class="card-header">
-                {{ contact.name }} {{ contact.firstname }}
-            </div>
-            <div class="card-body">
-                <h5 class="card-title text-danger">{{contact.mail}}</h5>
-                <p class="text-dark fw-bold" >{{contact.message}}</p>
-                <a href="{{ path('app_contact_show', {'id': contact.id}) }}" class="btn btn-primary">bite</a>
-            </div>
-        </div>
-
+<div class="card m-4 bg-dark border border-4 rounded-5 border-primary">
+	<div class="card-header text-white text-uppercase fw-bold  fs-3 text-center">
+		{{ contact.name }}
+		{{ contact.firstname }}
+	</div>
+	<div class="card-body">
+		<h5 class="card-title text-white fw-bolder text-center">{{contact.mail}}</h5>
+		<hr>
+		<h6 class=" text-white fw-bolder text-center">{{contact.phone}}</h6>
+		<hr>
+		<p class=" text-white fw-bolder">{{contact.message}}</p>
+		<div class="d-flex justify-content-around ">
+			<a href="{{ path('app_contact_show', {'id': contact.id}) }}" class="btn btn-primary  ">voir entierement</a>
+			<a href="{{ path('app_contact_delete', {'id': contact.id}) }}" class="btn btn-danger">supprimer</a>
+		</div>
+	</div>
+</div>
