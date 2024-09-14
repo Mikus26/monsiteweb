@@ -20,31 +20,33 @@ animations.forEach(({ element, path }) => {
   }
 });
 
+
+
 document.getElementById("toggle-light").addEventListener("click", function() {
-  // Sélectionner tous les éléments ayant une classe contenant '-dark' ou '-light'
-  let elements = document.querySelectorAll('[class*="-dark"], [class*="-white"], .text-black, .text-white');
+  // Sélectionner tous les éléments ayant les classes à basculer
+  let elements = document.querySelectorAll('.bg-dark, .bg-white, .text-black, .text-white');
 
   elements.forEach(function(element) {
-      // Remplacer toutes les occurrences de '-dark' par '-light'
-      if (element.className.includes('-dark')) {
-          element.className = element.className.replace(/-dark/g, '-white');
+      // Si l'élément a la classe bg-dark, on la remplace par bg-white
+      if (element.classList.contains('bg-dark')) {
+          element.classList.remove('bg-dark');
+          element.classList.add('bg-white');
       } 
-      // Remplacer toutes les occurrences de '-light' par '-dark'
-      else if (element.className.includes('-white')) {
-          element.className = element.className.replace(/-white/g, '-dark');
+      // Si l'élément a la classe bg-white, on la remplace par bg-dark
+      else if (element.classList.contains('bg-white')) {
+          element.classList.remove('bg-white');
+          element.classList.add('bg-dark');
       }
 
-      // Remplacer 'text-black' par 'text-white'
-      if (element.classList.contains('text-black')) {
+      // Si l'élément a la classe text-white, on la remplace par text-black
+      if (element.classList.contains('text-white')) {
+          element.classList.remove('text-white');
+          element.classList.add('text-black');         
+      } 
+      // Si l'élément a la classe text-black, on la remplace par text-white
+      else if (element.classList.contains('text-black')) {
           element.classList.remove('text-black');
           element.classList.add('text-white');
-      } 
-      // Remplacer 'text-white' par 'text-black'
-      else if (element.classList.contains('text-white')) {
-          element.classList.remove('text-white');
-          element.classList.add('text-black');
       }
   });
 });
-
-
