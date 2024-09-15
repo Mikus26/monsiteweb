@@ -22,31 +22,3 @@ animations.forEach(({ element, path }) => {
 
 
 
-document.getElementById("toggle-light").addEventListener("click", function() {
-  // Sélectionner tous les éléments ayant les classes à basculer
-  let elements = document.querySelectorAll('.bg-dark, .bg-white, .text-black, .text-white');
-
-  elements.forEach(function(element) {
-      // Si l'élément a la classe bg-dark, on la remplace par bg-white
-      if (element.classList.contains('bg-dark')) {
-          element.classList.remove('bg-dark');
-          element.classList.add('bg-white');
-      } 
-      // Si l'élément a la classe bg-white, on la remplace par bg-dark
-      else if (element.classList.contains('bg-white')) {
-          element.classList.remove('bg-white');
-          element.classList.add('bg-dark');
-      }
-
-      // Si l'élément a la classe text-white, on la remplace par text-black
-      if (element.classList.contains('text-white')) {
-          element.classList.remove('text-white');
-          element.classList.add('text-black');         
-      } 
-      // Si l'élément a la classe text-black, on la remplace par text-white
-      else if (element.classList.contains('text-black')) {
-          element.classList.remove('text-black');
-          element.classList.add('text-white');
-      }
-  });
-});

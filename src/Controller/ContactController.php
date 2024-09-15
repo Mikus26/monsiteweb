@@ -17,7 +17,8 @@ class ContactController extends AbstractController
     #[Route('/', name: 'app_contact_index', methods: ['GET'])]
     public function index(ContactRepository $contactRepository): Response
     {
-        $contacts = $contactRepository->findAll(); // Obtenez une liste de contacts depuis la base de données
+        $contacts = $contactRepository->findByDate();
+    
         return $this->render('contact/index.html.twig', [
             'contacts' => $contacts,
         ]);

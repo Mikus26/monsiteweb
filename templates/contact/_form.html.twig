@@ -9,27 +9,28 @@
 		<div class="row mb-4">
 
 			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
-				{{ form_widget(form.Name)}}
-				{{ form_label(form.Name)}}
+				<p class="text-white">{{ form_label(form.Name)}}</p>
+				<p>{{ form_widget(form.Name)}}</p>
 			</div>
 			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
+				<p class="text-white">{{ form_label(form.FirstName)}}</p>
 				{{ form_widget(form.FirstName)}}
-				{{ form_label(form.FirstName)}}
 			</div>
 		</div>
 		<!-- Text input -->
 		<div class="row mb-4">
 
 			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
+				<p class="text-white">{{ form_label(form.Mail)}}</p>
 				{{ form_widget(form.Mail)}}
-				{{ form_label(form.Mail)}}
 			</div>
 			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
+				<p class="text-white">{{ form_label(form.Phone)}}</p>
 				{{ form_widget(form.Phone)}}
-				{{ form_label(form.Phone)}}
 			</div>
 		</div>
 		<div data-mdb-input-init class="form-outline mb-4">
+		<p class="text-white">{{ form_label(form.Message) }}</p>
 			{{ form_widget(form.Message) }}
 		</div>
 		<!-- Checkbox -->
