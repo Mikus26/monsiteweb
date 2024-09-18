@@ -4,8 +4,6 @@ namespace App\Controller;
 
 use App\Form\ContactType;
 use App\Entity\Contact;
-use App\Entity\Avis;
-use App\Form\AvisType;
 use Doctrine\ORM\EntityManagerInterface;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -24,6 +22,8 @@ class HomeController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager->persist($contact);
             $entityManager->flush();
+
+            $this->addFlash('success','bien joué poulet');
 
             return $this->redirectToRoute('app_home', [], Response::HTTP_SEE_OTHER);
         }

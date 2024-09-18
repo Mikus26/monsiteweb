@@ -28,6 +28,7 @@
     },
     "dependencies": {
         "file-loader": "^6.2.0",
+        "notyf": "^3.10.0",
         "react-lottie": "^1.2.4"
     }
 }

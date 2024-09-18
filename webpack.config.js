@@ -26,6 +26,7 @@ Encore
      */
     .addEntry('app', './assets/app.js')
     .addEntry('base', './assets/base.js')
+    .addEntry('notyf', './assets/notyf.js')
 
 
     // When enabled, Webpack "splits" your files into smaller pieces for greater optimization.
