@@ -76,6 +76,8 @@ class ContactController extends AbstractController
 
             $entityManager->remove($contact);
             $entityManager->flush();
+
+            $this->addFlash('error','cards contact supprimé');
         
 
         return $this->redirectToRoute('app_contact_index', [], Response::HTTP_SEE_OTHER);

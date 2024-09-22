@@ -1,16 +1,13 @@
-// assets/styles/global.scss
-
 // customize some Bootstrap variables
-$primary: darken(#1e00c7,0%);
+$primary: darken(#6666fc,0%);
 $danger: darken(#da0101,0%);
 $dark: darken(hsl(240, 93%, 6%),0%);
 $light: darken(#3eecf2,0%);
+$white: darken(#f8faf8,0%);
 
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
-
-
 @import "./_navbar.scss";
 @import "./footer.scss";
 @import "./graphics.scss"

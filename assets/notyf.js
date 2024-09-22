@@ -19,6 +19,11 @@ const notyf = new Notyf({
             background: '#ffd700',
             icon: false
         },
+        {
+            type: 'success',
+            background: '#6666fc',
+            icon: false
+        },
     ]
 });
 
