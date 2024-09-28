@@ -7,40 +7,38 @@
 
 	<body>
 
-
-		<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+		<div id="myCarousel" class="carousel slide align-items-center col-md-12" data-bs-ride="carousel">
 			<div class="carousel-indicators">
 				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
 				<button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-
 			</div>
 			<div class="carousel-inner">
 				<div class="carousel-item active">
-					<div class="container">
+				<div class="col-12 col-md-12 col-lg-12">
+					<div class="container m-0">
 						<div class="carousel-caption text-start">
-							<h2 class="align-items-start text-white fw-bold mb-5 name">Michael Walenciak</h2>
-							<h1 class="text-white">Développeur Web</h1>
-							<p class="text-white">Réalisateur de projets web</p>
+							<h2 class="col-12 align-items-end text-primary fw-bold mb-5 name">Michael Walenciak</h2>
+							<h1 class="text-white text-center fs-1 fw-bold">Développeur Web</h1>
 							<p>
-								<a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+								<a class="btn btn-lg text-light fw-bold btn-primary mt-5" href="#">Sign up today</a>
 							</p>
 						</div>
 					</div>
 				</div>
-
+				</div>
 				<div class="carousel-item">
-					<svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveaspectratio="xMidYMid slice" focusable="false">
+					<svg class="bd-placeholder-img rounded-circle" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveaspectratio="xMidYMid slice" focusable="false">
 						<rect width="100%" height="100%" fill="transparent"></rect>
 					</svg>
 
-					<div class="container">
+					<div class="container col-md-12">
 						<div class="align-items-center">
 							<div class="carousel-caption text-end">
-								<img class="picofme d-flex justify-content-center  mt-5" src="{{ asset('/build/images/mikecv.232637bb.jpg') }}" alt="">
+								<img class="picofme d-flex justify-content-center" src="{{ asset('/build/images/—Pngtree—web development illustration modern_4484302.e83df41a.png') }}" alt="">
 								<h1 class="text-white">One more for good measure.</h1>
 								<p class="text-white">Some representative placeholder content for the third slide of this carousel.</p>
 								<p class="text-white">
-									<a class="btn btn-lg btn-primary" href="#">Browse gallery</a>
+									<a class="btn btn-lg btn-primary text-light" href="#">Browse gallery</a>
 								</p>
 							</div>
 						</div>
@@ -56,64 +54,67 @@
 				<span class="visually-hidden">Next</span>
 			</button>
 		</div>
-		<div
-			class="container marketing">
-
-			{# div de presentation  #}
-			<div class="col-md-12 ">
-
-				<h2 class="text-center text-white fw-bold mb-5 ">Qui suis je
-				</h2>
-	<div class="row">
-    <div class="col-md-6">
-        <img class="picofme d-flex align-items-center justify-content-center mt-5" src="{{ asset('/build/images/mikecv.232637bb.jpg') }}" alt="">
-    </div>
-    <div class="col-md-6 bg-primary rounded rounded-3 text-center text-white d-flex align-items-center fw-bold p-4 fs-5 flex-column">
-        Je m'appelle Michael, et je suis officiellement développeur depuis deux ans, mais j'ai le nez dans le code depuis bien plus longtemps. Passionné et autodidacte, j'ai commencé à apprendre le développement bien avant d'en faire mon métier, ce qui m'a permis d'acquérir une large palette de compétences. Aujourd'hui, je maîtrise plusieurs langages et technologies, tout en restant curieux et avide d'apprendre de nouvelles choses. Mon approche rigoureuse et mon envie d'innovation me permettent de m'épanouir pleinement dans mon travail. Envie d'en savoir plus ?
-        <a class="btn btn-light mt-4 d-block">Contact</a>
-    </div>
-</div>
-
+		<div class="container marketing">
+			<div class="col-md-12 mt-5 pt-5 ">
+				<div class="py-5">
+					<div class="bg-primary rounded rounded-3 mt-5">
+						<h3 class="text-light text-center fw-bold p-3 text-uppercase fs-2">Qui suis-je ?</h3>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<img class="picofme d-flex align-items-center justify-content-center mt-5" src="{{ asset('/build/images/mike.f7d6ffab.jpg') }}" alt="">
+					</div>
+					<div class="col-md-6 bg-primary rounded rounded-3 text-center text-light d-flex align-items-center fw-bold p-5 fs-5 flex-column lh-base">
+						Je m'appelle Michael
+						<br>Je suis Michael, un passionné de code depuis toujours. Autodidacte et curieux, j'ai plongé dans l'univers du développement bien avant d'en faire ma carrière, accumulant des compétences variées et solides. Aujourd'hui, je maîtrise une multitude de langages et technologies, tout en restant constamment à la recherche de nouvelles innovations. Mon approche rigoureuse et mon esprit d'innovation me permettent de repousser les limites et d'exceller dans ce que je fais. Prêt à découvrir ce que je peux accomplir ?
+						<a class="btn btn-light text-primary fw-bold d-flex align-items-center d-block mt-5 ">Contact</a>
+					</div>
+				</div>
 			</div>
-			<!-- Three columns of text below the carousel -->
-			<h2 class="col-md-12 text-center text-white fw-bolder mt-5 mb-5">Qu'est ce que je propose ?</h2>
-			<div class="row justify-content-around">
-				<div class="col-lg-3 bg-primary rounded-4">
-					<img class="img-fluid" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="img-alt">
-					<h2 class="text-white text-center fw-bold">Portfolio</h2>
-					<p class="text-white text-center">besoin d'un site pour rassembler vos projets ?
-					</p>
+			<div class="mt-5 pt-5">
+				<div class="py-5">
+					<div class="bg-primary rounded rounded-3 mt-5">
+						<h3 class="text-light text-center fw-bold p-3 text-uppercase fs-2">Ce que je propose ?
+						</h3>
+					</div>
+				</div>
+				<div class="row justify-content-around py-5">
+					<div class="col-12 col-md-3 col-lg-3 bg-primary rounded-4">
+						<img class="img-fluid" src="{{ asset('/build/images/dev.0d39b871.png') }}" alt="img-alt">
+						<h2 class="text-light text-center fw-bold">Portfolio</h2>
+						<p class="text-light text-center">besoin d'un site pour rassembler vos projets ?
+						</p>
+					</div>
 
-				</div>
-				<!-- /.col-lg-4 -->
-				<div class="col-lg-3 bg-primary rounded-4">
-					<img class="img-fluid" src="{{ asset('/build/images/mobilDevelopment.ccaa9afe.png') }}" alt="img-work">
-					<h2 class="text-white text-center fw-bold">Site vitrine</h2>
-					<p class="text-white text-center">besoin d'un site pour rassembler vos projets ?</p>
-				</div>
-				<!-- /.col-lg-4 -->
-				<div class="col-lg-3 bg-primary rounded-4">
-					<img class="img-fluid" src="{{ asset('/build/images/workinprogress.d79b20e7.png') }}" alt="img-work">
-					<h2 class="text-white text-center fw-bold">Application web</h2>
+					<div class="col-12 col-md-3 col-lg-3 bg-primary rounded-4">
+						<img class="img-fluid" src="{{ asset('/build/images/mobilDevelopment.ccaa9afe.png') }}" alt="img-work">
+						<h2 class="text-light text-center fw-bold">Site vitrine</h2>
+						<p class="text-light text-center">besoin d'un site pour rassembler vos projets ?</p>
+					</div>
+					<div class=" col-12 col-md-3 col-lg-3 bg-primary rounded-4">
+						<img class="img-fluid" src="{{ asset('/build/images/workinprogress.d79b20e7.png') }}" alt="img-work">
+						<h2 class="text-light text-center fw-bold">Application web</h2>
 
-					<p class="text-white text-center">Une idée en tete ? un site pour ....</p>
+						<p class="text-light text-center">Une idée en tete ? un site pour ....</p>
+					</div>
 				</div>
-				<!-- /.col-lg-4 -->
 			</div>
 			<!-- /.row -->
-
-
+			<div class="py-5">
+				<div class="bg-primary rounded rounded-3 mt-5">
+					<h3 class="text-light text-center fw-bold p-3 text-uppercase fs-2">Le Déroulé ?</h3>
+				</div>
+			</div>
 			<!-- START THE FEATURETTES -->
 
-			<hr class="featurette-divider">
 
-			<div class="row featurette">
+			<div class="row featurette mt-5">
 				<div class="col-md-7">
-					<h2 class="featurette-heading text-white">Remplir le formulaire de contact.
-					</h2>
-					<p class="lead text-white">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
-					<p>
-						<a class="btn btn-lg btn-primary" href="#">Sign up today</a>
+					<h2 class="featurette-heading text-primary fw-bold m-5">Remplir le formulaire de contact.</h2>
+					<p class="lead text-white m-5">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+					<p class="m-5">
+						<a class="btn btn-lg text-light btn-primary m-5 " href="#">Sign up today</a>
 					</p>
 				</div>
 				<div class="col-md-5 p-5">
@@ -124,11 +125,9 @@
 
 			<hr class="featurette-divider">
 
-			<div class="row featurette">
+			<div class="row featurette my-5">
 				<div class="col-md-7 order-md-2">
-					<h2 class="featurette-heading text-white">Je vous recontact rapidement .
-						<span class=" text-white">See for yourself.</span>
-					</h2>
+					<h2 class="featurette-heading text-primary fw-bold m-5">Je vous recontact rapidement .</h2>
 					<p class="lead text-white">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
 				</div>
 				<div class="col-md-5 order-md-1">
@@ -139,11 +138,10 @@
 
 			<hr class="featurette-divider">
 
+
 			<div class="row featurette">
-				<div class="col-md-7">
-					<h2 class="featurette-heading text-white">On discute de votre projet.
-						<span class=" text-white">Checkmate.</span>
-					</h2>
+				<div class="col-md-7 my-5">
+					<h2 class="featurette-heading text-primary fw-bold m-5">On discute de votre projet.</h2>
 					<p class="lead text-white">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
 				</div>
 				<div class="col-md-5 order-md-1">
@@ -155,10 +153,8 @@
 			<hr class="featurette-divider">
 
 			<div class="row featurette">
-				<div class="col-md-7 order-md-2">
-					<h2 class="featurette-heading text-white">Je fais en sorte qu'il prenne vie .
-						<span class=" text-white">See for yourself.</span>
-					</h2>
+				<div class="col-md-7 order-md-2 my-5">
+					<h2 class="featurette-heading text-primary fw-bold m-5">Je fais en sorte qu'il prenne vie </h2>
 					<p class="lead text-white">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
 				</div>
 				<div class="col-md-5 order-md-1">
