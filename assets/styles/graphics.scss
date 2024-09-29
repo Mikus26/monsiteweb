@@ -45,9 +45,8 @@ $theme-colors: (
 }
 
 .picofme{
-    height: 500px;
+    width: 60%;
     justify-content: center;
-    margin-top: 700px;
     text-align: center;
     align-items: center;
 }
@@ -62,4 +61,36 @@ $theme-colors: (
 
 .bg-dark, .bg-white, .text-black, .text-white {
     transition: background-color 0.6s ease, color 0.6s ease;
+}
+
+.hauteur {
+    height: 250px !important;
+    background-color: transparent !important;
+
+}
+
+
+    .hauteur {
+        margin-bottom: 20px; /* Ajoute un espace entre la div hauteur et le carousel */
+    }
+
+    #myCarousel {
+        position: relative; /* Assure que le carousel reste dans le flux normal du document */
+    }
+
+    .carousel-item {
+        height: 500px; /* Ajustez cette valeur selon vos besoins */
+    }
+
+    .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+    }
+
+.photoimg{
+    height: 20em;
+    margin-left: auto !important;
+    margin-right: auto;
+    margin-top: 50px;
+
 }
