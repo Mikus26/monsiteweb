@@ -64,15 +64,13 @@ $theme-colors: (
 }
 
 .hauteur {
-    height: 250px !important;
+    height: 2500px !important;
     background-color: transparent !important;
 
 }
 
 
-    .hauteur {
-        margin-bottom: 20px; /* Ajoute un espace entre la div hauteur et le carousel */
-    }
+
 
     #myCarousel {
         position: relative; /* Assure que le carousel reste dans le flux normal du document */
@@ -88,9 +86,7 @@ $theme-colors: (
     }
 
 .photoimg{
-    height: 20em;
+    height:50vh;
     margin-left: auto !important;
     margin-right: auto;
-    margin-top: 50px;
-
 }
