@@ -26,7 +26,7 @@ class Contact
     #[ORM\Column(length: 255)]
     private ?string $Phone = null;
 
-    #[ORM\Column(length: 255)]
+    #[ORM\Column(type: "text")]
     private ?string $Message = null;
 
     #[ORM\Column]

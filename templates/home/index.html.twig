@@ -35,7 +35,7 @@
 				<div class="container mt-5 w-100">
 					<div class="carousel-caption">
 						<img class="d-flex photoimg  justify-content-center" src="{{ asset('/build/images/—Pngtree—web development illustration modern_4484302.e83df41a.png') }}" alt="">
-						<p class="text-white fs-3 fw-bold">Votre site, à la mesure de vos ambitions.</p>
+						<p class="text-white fs-3 fw-bold bg-primary p-3 rounded rounded-3">Votre site, à la mesure de vos ambitions.</p>
 					</div>
 				</div>
 			</div>
@@ -54,17 +54,17 @@
 		<div class="col-md-12 mt-5 pt-5 ">
 			<div class="py-5">
 				<div class="bg-primary rounded rounded-3 mt-5">
-					<h3 class="text-light text-center fw-bold p-3  text-uppercase fs-2">Qui suis-je ?</h3>
+					<h3 class="text-light text-center fw-bold p-3 m-5 text-uppercase fs-2">Qui suis-je ?</h3>
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-md-6">
-					<img class="picofme d-flex align-items-center justify-content-center mt-5" src="{{ asset('/build/images/mike.f7d6ffab.jpg') }}" alt="">
+					<img class="picofme d-flex align-items-center ms-auto me-auto rounded rounded-3  mt-5" src="{{ asset('/build/images/mike.f7d6ffab.jpg') }}" alt="">
 				</div>
 				<div class="col-md-6 bg-primary rounded rounded-3 text-center text-light d-flex align-items-center fw-bold p-5 fs-5 flex-column lh-base">
-					Je m'appelle Michael
-					<br>Je suis Michael, un passionné de code depuis toujours. Autodidacte et curieux, j'ai plongé dans l'univers du développement bien avant d'en faire ma carrière, accumulant des compétences variées et solides. Aujourd'hui, je maîtrise une multitude de langages et technologies, tout en restant constamment à la recherche de nouvelles innovations. Mon approche rigoureuse et mon esprit d'innovation me permettent de repousser les limites et d'exceller dans ce que je fais. Prêt à découvrir ce que je peux accomplir ?
-					<a class="btn btn-light text-primary fw-bold d-flex align-items-center d-block mt-5 ">Contact</a>
+					<p class="mt-5">
+						Je suis Michael, un passionné de code depuis toujours. Autodidacte et curieux, j'ai plongé dans l'univers du développement bien avant d'en faire ma carrière, accumulant des compétences variées et solides. Aujourd'hui, je maîtrise une multitude de langages et technologies, tout en restant constamment à la recherche de nouvelles innovations. Mon approche rigoureuse et mon esprit d'innovation me permettent de repousser les limites et d'exceller dans ce que je fais. Prêt à découvrir ce que je peux accomplir ?</p>
+					<a class="btn btn-light text-primary fw-bold d-flex align-items-center d-block mt-5 " href="#form">Contact</a>
 				</div>
 			</div>
 		</div>
@@ -110,7 +110,7 @@
 				<h2 class="featurette-heading text-primary fw-bold m-5">Remplir le formulaire de contact.</h2>
 				<p class="lead text-white m-5">Merci de remplir le formulaire avec les informations nécessaires afin de démarrer votre projet. Votre collaboration me permettra de vous offrir un service personnalisé et adapté à vos besoins."</p>
 				<p class="m-5">
-					<a class="btn btn-lg text-light btn-primary m-5 " href="#">Sign up today</a>
+					<a class="btn btn-lg text-light btn-primary m-5 " href="#form">aller au formulaire </a>
 				</p>
 			</div>
 			<div class="col-md-5 p-5">
@@ -160,15 +160,15 @@
 			</div>
 		</div>
 
-		<hr
-		class="featurette-divider">
-				<div class="py-5">
+		<hr class="featurette-divider">
+		<div class="py-5">
 			<div class="bg-primary rounded rounded-3 mt-5">
-				<h3 class="text-light text-center fw-bold p-3 text-uppercase fs-2 py-5">Alors ? on commence quand ? </h3>
+				<h3 class="text-light text-center fw-bold p-3 text-uppercase fs-2 py-5">Alors ? on commence quand ?
+				</h3>
 			</div>
 		</div>
 
-	<!-- /END THE FEATURETTES -->
+		<!-- /END THE FEATURETTES -->
 
 	</div>
 	{% include "/contact/_form.html.twig" %}

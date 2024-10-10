@@ -1,46 +1,41 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Contact{% endblock %}
+{% block title %}Contact
+{% endblock %}
 
 {% block body %}
-    <h1>Contact</h1>
+<div class="row"><div class="col-md-1"></div>
+    <div class="p-3 col-md-10"><h1 class="text-light bg-primary fw-bold p-3 d-flex justify-content-center rounded rounded-3">Messagerie</h1></div>
 
-    <table class="table">
-        <tbody>
-            <tr>
-                <th>Id</th>
-                <td>{{ contact.id }}</td>
-            </tr>
-            <tr>
-                <th>Name</th>
-                <td>{{ contact.Name }}</td>
-            </tr>
-            <tr>
-                <th>FirstName</th>
-                <td>{{ contact.FirstName }}</td>
-            </tr>
-            <tr>
-                <th>Mail</th>
-                <td>{{ contact.Mail }}</td>
-            </tr>
-            <tr>
-                <th>Phone</th>
-                <td>{{ contact.Phone }}</td>
-            </tr>
-            <tr>
-                <th>Message</th>
-                <td>{{ contact.Message }}</td>
-            </tr>
-            <tr>
-                <th>CreatedAt</th>
-                <td>{{ contact.CreatedAt ? contact.CreatedAt|date('Y-m-d H:i:s') : '' }}</td>
-            </tr>
-        </tbody>
-    </table>
+</div>
+	
+	<div class="row p-5">
 
-    <a href="{{ path('app_contact_index') }}">back to list</a>
+		<div class="col-md-1 p-5"></div>
+		<div class="col-md-2 text-light fw-bold bg-primary text-center fs-3 p-3 rounded rounded-3 text-uppercase">
+			<div>{{ contact.FirstName }}
+				{{ contact.Name }}</div>
+		</div>
+		<div class="col-md-2 p-3"></div>
+		<div class="col-md-2 text-light fw-bold bg-primary text-center d-flex align-items-center justify-content-center fs-3 p-3 rounded rounded-3 ">
+			<div>{{ contact.Mail }}</div>
+		</div>
+		<div class="col-md-2 p-3"></div>
+		<div class="col-md-2 text-light fw-bold bg-primary d-flex align-items-center justify-content-center fs-3 p-3 rounded rounded-3">
+			<div>{{ contact.Phone }}</div>
+		</div>
 
-    <a href="{{ path('app_contact_edit', {'id': contact.id}) }}">edit</a>
-
-    {{ include('contact/_delete_form.html.twig') }}
+	</div>
+	<div class="row">
+		<div class="col-md-1 p-5"></div>
+		<div class="col-md-10 text-light fw-bold bg-primary text-center d-flex align-items-center justify-content-center fs-5 p-3 rounded rounded-3 mt-5">{{ contact.Message }}</div>
+	</div>
+	<div class="d-flex mt-5 justify-content-center gap-3">
+		<div>
+			<a class="btn btn-primary p-3 text-light fw-bold text-decoration-none" href="{{ path('app_contact_index') }}">back to list</a>
+		</div>
+		<div>
+			{{ include('contact/_delete_form.html.twig') }}
+		</div>
+	</div>
 {% endblock %}

@@ -1,44 +1,48 @@
 {{ form_start(form) }}
-
+{{ form_widget(form._token) }}
 
 <!-- 2 column grid layout with text inputs for the first and last names -->
 <div class="row p-5">
 	<div class="col-md-3"></div>
-	<div class="col-md-6 border border-primary border-5 bg-primary  p-5 rounded rounded-5">
+	<div id="form" class="col-md-6 border border-primary border-5 bg-primary p-5 rounded rounded-5">
 		<div>
-			<h2 class="d-flex justify-content-center p-4 text-light fw-bold text-center">Un Projet ? Parlons en !
-			</h2>
+			<h2 class="d-flex justify-content-center p-4 text-light fw-bold text-center">Un Projet ? Parlons-en !</h2>
 		</div>
 		<div class="row mb-4">
-
-			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
-				<p class="text-light fw-bold">{{ form_label(form.Name)}}</p>
-				<p>{{ form_widget(form.Name)}}</p>
+			<div data-mdb-input-init class="form-outline mb-4 col-md-6">
+				<p class="text-light fw-bold">{{ form_label(form.Name) }}</p>
+				<p>{{ form_widget(form.Name) }}</p>
 			</div>
-			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
-				<p class="text-light fw-bold">{{ form_label(form.FirstName)}}</p>
-				{{ form_widget(form.FirstName)}}
+			<div data-mdb-input-init class="form-outline mb-4 col-md-6">
+				<p class="text-light fw-bold">{{ form_label(form.FirstName) }}</p>
+				{{ form_widget(form.FirstName) }}
 			</div>
 		</div>
+		
 		<!-- Text input -->
 		<div class="row mb-4">
-
-			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
-				<p class="text-light fw-bold">{{ form_label(form.Mail)}}</p>
-				{{ form_widget(form.Mail)}}
+			<div data-mdb-input-init class="form-outline mb-4 col-md-6">
+				<p class="text-light fw-bold">{{ form_label(form.Mail) }}</p>
+				{{ form_widget(form.Mail) }}
 			</div>
-			<div data-mdb-input-init class="form-outline mb-4 col-md-6 ">
-				<p class="text-light fw-bold">{{ form_label(form.Phone)}}</p>
-				{{ form_widget(form.Phone)}}
+			<div data-mdb-input-init class="form-outline mb-4 col-md-6">
+				<p class="text-light fw-bold">{{ form_label(form.Phone) }}</p>
+				{{ form_widget(form.Phone) }}
 			</div>
 		</div>
+		
 		<div data-mdb-input-init class="form-outline mb-4">
 			<p class="text-light fw-bold">{{ form_label(form.Message) }}</p>
 			{{ form_widget(form.Message) }}
 		</div>
-		<!-- Checkbox -->
+		
+		<!-- Submit button -->
 		<div class="form-check d-flex justify-content-center mb-4">
-			<button class="btn btn-light text-primary fw-bold justify-content-center">{{ button_label|default('Save') }}</button>
+			<button class="btn btn-light text-primary fw-bold justify-content-center">{{ button_label|default('Envoyer') }}</button>
 		</div>
 	</div>
-</div><!-- Submit button --><form>{{ form_end(form) }}
+</div>
+
+
+
+{{ form_end(form) }}

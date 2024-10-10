@@ -3,9 +3,13 @@
 {% block title %}Contact index{% endblock %}
 
 {% block body %}
-    <h1>Contact index</h1>
+<div class="row">
+<div class="col-md-5"></div>
+<div class="col-md-2"> <h1 class="text-light bg-primary p-3 text-center fw-bold rounded rounded-3 mt-5">Messagerie</h1></div>
+</div>
+   
 
-    <div class="row">
+    <div class="row mt-5">
         {% for contact in contacts %}
             <div class="col-md-4 mb-4">
                 {% include 'components/cards.html.twig' %}

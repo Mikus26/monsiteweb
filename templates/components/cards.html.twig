@@ -1,18 +1,19 @@
-<div class="card m-4 bg-dark border border-4 rounded-5 border-primary gap-3">
-	<div class="card-header text-white text-uppercase fw-bold  fs-3 text-center">
+<div class="card m-4  bg-primary border border-4 rounded-5 border-primary gap-3">
+	<div class="card-header text-light text-uppercase fw-bold  fs-3 text-center">
 		{{ contact.name }}
 		{{ contact.firstname }}
 	</div>
-	<div class="text-center text-white fw-bold">{{ contact.CreatedAt|date("d/m/Y" ,"Europe/Paris") }}</div>
+	<div class="text-center text-light fw-bold">{{ contact.CreatedAt|date("d/m/Y" ,"Europe/Paris") }}</div>
+	<hr>
 	<div class="card-body">
-		<h5 class="card-title text-white fw-bolder text-center">{{contact.mail}}</h5>
+		<h5 class="card-title text-light fw-bolder text-center">{{contact.mail}}</h5>
 		<hr>
-		<h6 class=" text-white fw-bolder text-center">{{contact.phone}}</h6>
+		<h6 class=" text-light fw-bolder text-center">{{contact.phone}}</h6>
 		<hr>
-		<p class=" text-white fw-bolder">{{ contact.message|split(' ')|slice(0, 5)|join(' ') ~ '...' }}</p>
+		<p class=" text-light fw-bolder">{{ contact.message|split(' ')|slice(0, 5)|join(' ') ~ '...' }}</p>
 		<div class="d-flex justify-content-around ">
-			<a href="{{ path('app_contact_show', {'id': contact.id}) }}" class="btn btn-primary  ">voir</a>
-			<a href="{{ path('app_contact_delete', {'id': contact.id}) }}" class="btn btn-danger">supprimer</a>
+			<a href="{{ path('app_contact_show', {'id': contact.id}) }}" class="btn btn-light fw-bold text-primary ">voir</a>
+			<a href="{{ path('app_contact_delete', {'id': contact.id}) }}" class="btn btn-danger fw-bold">supprimer</a>
 		</div>
 	</div>
 </div>
