@@ -1,32 +1,51 @@
 <!DOCTYPE html>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-<html>
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		
 		<title>
-			{% block title %}Welcome!
-			{% endblock %}
+			{% block title %}{% endblock %} | Développeur Web Freelance Valence - Michael Walenciak
 		</title>
+		
+		<meta name="description" content="{% block description %}Développeur web freelance à Valence. Création de sites web sur mesure, responsive design, optimisation SEO. Expertise en Symfony, PHP, JavaScript.{% endblock %}">
+		<meta name="keywords" content="développeur web, freelance, Valence, Symfony, PHP, JavaScript, création site web, responsive design, SEO">
+		<meta name="author" content="Michael Walenciak">
+		<link rel="canonical" href="{{ absolute_url(app.request.pathinfo) }}">
+		
+		<meta property="og:title" content="{% block og_title %}{% endblock %} | Développeur Web Freelance Valence">
+		<meta property="og:description" content="{% block og_description %}{% endblock %}">
+		<meta property="og:image" content="{% block og_image %}{{ absolute_url(asset('images/og-image.jpg')) }}{% endblock %}">
+		<meta property="og:url" content="{{ absolute_url(app.request.pathinfo) }}">
+		<meta property="og:type" content="website">
+		
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="{% block twitter_title %}{% endblock %} | Développeur Web Freelance Valence">
+		<meta name="twitter:description" content="{% block twitter_description %}{% endblock %}">
+		<meta name="twitter:image" content="{% block twitter_image %}{{ absolute_url(asset('images/twitter-image.jpg')) }}{% endblock %}">
+		
+		<link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}">
+		
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		
 		{% block stylesheets %}
 			{{ encore_entry_link_tags('app') }}
 			{{ encore_entry_link_tags('base') }}
-
-
 		{% endblock %}
+		
 		{% block javascripts %}
 			{{ encore_entry_script_tags('app') }}
 			{{ encore_entry_script_tags('base') }}
-
-
 		{% endblock %}
 	</head>
-	<body class="bg-dark">
 
+	<body class="bg-dark">
 		{% block header %}
 			{% include "components/navbar.html.twig" %}
 		{% endblock %}
+		
 		<main class="container">
 			{% include 'components/notyf.html.twig' %}
 		</main>
@@ -35,7 +54,6 @@
 
 		{% block footer %}
 			{% include "components/footer.html.twig" %}
-
 		{% endblock %}
 	</body>
 </html>
