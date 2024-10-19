@@ -5,9 +5,6 @@
 <div class="row p-5">
 	<div class="col-md-3"></div>
 	<div id="form" class="col-md-6 border border-primary border-5 bg-primary p-5 rounded rounded-5">
-		<div>
-			<h2 class="d-flex justify-content-center p-4 text-light fw-bold text-center">Un Projet ? Parlons-en !</h2>
-		</div>
 		<div class="row mb-4">
 			<div data-mdb-input-init class="form-outline mb-4 col-md-6">
 				<p class="text-light fw-bold">{{ form_label(form.Name) }}</p>
@@ -18,7 +15,7 @@
 				{{ form_widget(form.FirstName) }}
 			</div>
 		</div>
-		
+
 		<!-- Text input -->
 		<div class="row mb-4">
 			<div data-mdb-input-init class="form-outline mb-4 col-md-6">
@@ -30,19 +27,18 @@
 				{{ form_widget(form.Phone) }}
 			</div>
 		</div>
-		
+
 		<div data-mdb-input-init class="form-outline mb-4">
 			<p class="text-light fw-bold">{{ form_label(form.Message) }}</p>
 			{{ form_widget(form.Message) }}
 		</div>
-		
+
 		<!-- Submit button -->
 		<div class="form-check d-flex justify-content-center mb-4">
 			<button class="btn btn-light text-primary fw-bold justify-content-center">{{ button_label|default('Envoyer') }}</button>
 		</div>
 	</div>
 </div>
-
 
 
 {{ form_end(form) }}
